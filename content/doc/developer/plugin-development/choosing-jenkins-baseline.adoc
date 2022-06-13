@@ -27,6 +27,9 @@ There are link:https://stats.jenkins.io/pluginversions/[statistics of core versi
 These are updated monthly.
 When updating the core dependency, choose the link:/changelog-stable/[newest LTS version] that doesn't exclude a majority of your existing users (by requiring a newer Jenkins than they have).
 
+NOTE:  if you are packaging a pure API library (one that does not depend on Jenkins APIs) then you should ignore these guidlelines and pick a `.1` LTS that is reasonablly old.  
+Something around 1 year old that does not have too many detached plugins is a good candidate
+
 ## Currently recommended versions
 
 At the moment, the Jenkins releases *PLACEHOLDER_OLDER_LTS_POINT_ONE* and *PLACEHOLDER_NEWER_LTS_POINT_ONE* make good core dependencies unless there are specific reasons, like new features, to choose a different release.
